@@ -38,7 +38,6 @@ class Waiter
           current_tip = new_tip
           hst_tipper = d_customer
         end
-        binding.pry
       end
     end
     hst_tipper
