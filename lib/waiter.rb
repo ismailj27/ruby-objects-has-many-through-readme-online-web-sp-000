@@ -41,7 +41,7 @@ class Waiter
         end
       end
     end
-    
+    hst_tipper
   end
   
  
