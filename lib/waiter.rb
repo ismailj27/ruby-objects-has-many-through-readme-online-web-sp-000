@@ -35,6 +35,8 @@ class Waiter
     Customer.all.each do |d_customer|
       meals.each do |d_meal|
         binding.pry
+        if d_meal.customer.name == d_customer.name
+        end
       end 
     end
   end
