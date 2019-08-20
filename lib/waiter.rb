@@ -30,7 +30,7 @@ class Waiter
     meals_arr
   end
   
-   def best_tipper
+  def best_tipper
     Customer.all.each do |d_customer|
       meals.each do |d_meal|
       end 
