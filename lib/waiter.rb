@@ -29,6 +29,8 @@ class Waiter
     meals_arr
   end
   
+  #Object relationships Waiter #best_tipper returns the Customer instance associated with the meal that received the largest tip
+  
   def best_tipper
     Customer.all.each do |d_customer|
       meals.each do |d_meal|
