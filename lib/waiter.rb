@@ -36,7 +36,8 @@ class Waiter
       meals.each do |d_meal|
         new_tip = d_meal.tip
         binding.pry
-        if d_meal.customer.name == d_customer.name && 
+        if d_meal.customer.name == d_customer.name && new_tip > current_tip
+          current_tip = new_tip
           hst_tipper = d_customer
         end
       end 
