@@ -22,7 +22,6 @@ class Waiter
   def meals
     meals_arr = []
     Meal.all.each do |d_meal|
-      binding.pry
       if d_meal.name == self.name
         meals_arr << d_meal
       end
