@@ -30,6 +30,7 @@ class Waiter
   end
   
   def best_tipper
+    hst_tipper = nil
     current_tip = 0
     Customer.all.each do |d_customer|
       meals.each do |d_meal|
