@@ -21,10 +21,10 @@ class Waiter
   
   def meals
     meals_arr = []
-    Waiter.all.each do |d_waiter|
+    Meal.all.each do |d_meal|
       binding.pry
-      if d_waiter.name == self.name
-        meals_arr << d_waiter
+      if d_meal.name == self.name
+        meals_arr << d_meal
       end
     end
     meals_arr
