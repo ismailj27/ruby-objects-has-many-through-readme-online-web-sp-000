@@ -32,6 +32,7 @@ class Waiter
   def best_tipper
     Customer.all.each do |d_customer|
       meals.each do |d_meal|
+        binding.pry
       end 
     end
   end
