@@ -23,7 +23,7 @@ class Waiter
     meals_arr = []
     Meal.all.each do |d_meal|
       binding.pry
-      if d_meal.name == self.name
+      if d_meal.waiter.name == self.name
         meals_arr << d_meal
       end
     end
